@@ -41,7 +41,7 @@
 margin-top: 80px;
 display: flex;
 justify-content: space-between;
-gap: max (12vw, 20px) ;
+gap: max(12vw, 20px) ;
 }
 .cart-total{
 flex: 1;
@@ -84,7 +84,8 @@ color:
 .cart-promocode-input{
     margin-top: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     background-color: #eaeaea;
     border-radius: 4px;
 
@@ -97,12 +98,25 @@ color:
     padding-left: 10px;
 
 }
-.cart-pormocode-input button{
+.cart-promocode-input button{
 
    width: max(10vw, 150px);
    padding: 12px 5px;
    background-color: black;
    border: none;
    color: white;
+   border-radius: 4px;
 
+
+}
+@media (max-width : 750px)
+{
+    .cart-bottom
+    {
+        flex-direction: column-reverse;
+    }
+    .cart-promocode
+    {
+        justify-content: start;
+    }
 }
